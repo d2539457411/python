@@ -57,8 +57,6 @@ qr.moveCenter(cp)
 windows.move(qr.topLeft())
 """
 windows.setWindowTitle('信号与系统') #添加窗口标题
-QtWidgets.QToolTip.setFont(QtGui.QFont('SansSerif', 10)) #设置提示语的字体和大小
-windows.setToolTip('这是窗口提示') #给widget组件设置提示语
 btn = QtWidgets.QPushButton('离散正弦信号',windows) #设置按钮并给按钮命名
 btn.setGeometry(200,150,100,50) #设置按钮位置和大小
 btn.clicked.connect(lssin)
